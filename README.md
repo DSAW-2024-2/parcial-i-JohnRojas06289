@@ -1,5 +1,5 @@
-#Creado por: John Jairo Rojas
-#Url: https://dsaw-2024-2.github.io/parcial-i-JohnRojas06289/
+# Creado por: John Jairo Rojas
+# Url: https://dsaw-2024-2.github.io/parcial-i-JohnRojas06289/
 
 # Reto de Componente de Vista Previa de Artículo con HTML, CSS y JavaScript
 
