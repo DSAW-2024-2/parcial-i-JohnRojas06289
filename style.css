@@ -1,4 +1,3 @@
-
 :root {
     --very-dark-grayish-blue: #48556a;
     --desaturated-dark-blue: #6d7f97;
@@ -67,13 +66,23 @@ body {
     justify-content: space-between;
 }
 
-.avatar {
+.avatar-container {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
     margin-right: 10px;
-    object-fit: cover;
 }
+
+.avatar {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
 
 .author-info {
     color: var(--grayish-blue);
@@ -114,20 +123,41 @@ body {
 /* PopUp Esttilos */
 
 .share-popup {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px; 
+    justify-content: space-between;
     position: absolute;
+    top: 380px !important;
+    left: 50%; 
+    transform: translateX(-50%);
     background-color: var(--very-dark-grayish-blue);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    border-radius: 10px; 
     color: var(--white);
-    border-radius: 10px;
+    padding: 1em;
+    display: none;
 }
+
+.share-popup::after {
+    content: "";
+    position: absolute; 
+    top: 100%;
+    transform: translateX(-50%) rotate(180deg); 
+    left: 50%; 
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-bottom: 10px solid var(--very-dark-grayish-blue); 
+}
+
 
 .share-popup img {
     width: 24px;
     height: 24px;
     margin: 5px;
 }
-
-
