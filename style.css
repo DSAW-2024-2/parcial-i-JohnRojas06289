@@ -1,0 +1,133 @@
+
+:root {
+    --very-dark-grayish-blue: #48556a;
+    --desaturated-dark-blue: #6d7f97;
+    --grayish-blue: #9eafc2;
+    --light-grayish-blue: #ecf2f8;
+    --white: #fff;
+    --font-family: 'Manrope', sans-serif;
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+    --font-size-body: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.container img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.main-info {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info h1 {
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: var(--font-weight-bold);
+}
+
+.main-info p {
+    color: var(--desaturated-dark-blue);
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.main-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.author-info {
+    color: var(--grayish-blue);
+    font-size: var(--font-size-body);
+}
+
+.author-info h2 {
+    margin: 0;
+    color: var(--very-dark-grayish-blue);
+    font-size: 1em;
+}
+
+.author-info time {
+    font-size: 0.9em;
+    color: var(--grayish-blue);
+}
+
+.share-button {
+    display: flex;
+    background-color: var(--light-grayish-blue);
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.share-button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* PopUp Esttilos */
+
+.share-popup {
+    display: none;
+    position: absolute;
+    background-color: var(--very-dark-grayish-blue);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.share-popup img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+
